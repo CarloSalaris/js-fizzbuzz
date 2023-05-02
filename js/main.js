@@ -35,6 +35,7 @@ for (let i = 1; i <= 100; i++) {
 
 //creare elemento in HTML con ".append"
 const outputResult = document.createElement('div');
+outputResult.classList.add("result")
 console.log(outputResult);
 outputResult.append(x)
 container.append(outputResult);
