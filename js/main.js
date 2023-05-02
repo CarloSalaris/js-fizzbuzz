@@ -10,19 +10,33 @@
 
         // "N Multiplo di x:" = N % x === 0
 
-// FOR LOOP (per ogni numero compreso tra 1 e 100)
+//Selezione elemento genitore
+const container = document.getElementById("container");
+console.log(container);
 
-    for (let i = 1; i <= 100; i++) {
-        
-        if (i % 15 === 0) { //CONTEMPORANEAMENTE multiplo 3 e 5 -->“FizzBuzz”
-            console.log("FizzBuzz");
-        }else if (i % 3 === 0) { //multiplo di 3 --> “Fizz”
-            console.log("Fizz");            
-        } else if (i % 5 === 0) { //multiplo di 5 --> “Buzz”
-            console.log("Buzz");
-        } else { //stampa il NUMERO
-            console.log(i);
-        }
+// Scrivere tutti i numeri compresi tra 1 e 100 (FOR LOOP) 
+for (let i = 1; i <= 100; i++) {
 
+    let x = i;
+
+    //Condizioni per cui esca una stringa piuttosto che un numero    
+    if (i % 15 === 0) { //CONTEMPORANEAMENTE multiplo 3 e 5 -->“FizzBuzz”
+        x = "FizzBuzz";
+        console.log("FizzBuzz");
+    } else if (i % 3 === 0) { //multiplo di 3 --> “Fizz”
+        x = "Fizz";
+        console.log("Fizz");            
+    } else if (i % 5 === 0) { //multiplo di 5 --> “Buzz”
+        x = "Buzz";
+        console.log("Buzz");
+    } else { //stampa il NUMERO
+        console.log(i);
     }
-    
+
+//creare elemento in HTML con ".append"
+const outputResult = document.createElement('div');
+console.log(outputResult);
+outputResult.append(x)
+container.append(outputResult);
+
+}
