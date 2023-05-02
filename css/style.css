@@ -1,3 +1,7 @@
+/****************************************
+    GENERAL RULES
+*****************************************/
+
 * {
     margin: 0; 
     padding: 0;
@@ -8,15 +12,25 @@ body {
     text-align: center;
 }
 
+h1 {
+    font-size: 50px;
+    margin-bottom: 30px;
+    color:antiquewhite;
+}
+
+
+/****************************************
+    UTILITIES
+*****************************************/
+
 #wrapper {
     padding: 50px;
     background-color: #083b4c;
 }
 
-h1 {
-    margin-bottom: 30px;
-    color:antiquewhite;
-}
+/****************************************
+    STRUCTURE
+*****************************************/
 
 #container {
     width: 80%;
@@ -40,6 +54,8 @@ h1 {
     background-color: #1389b2;
 }
 
+/* differentiate the outputs */
+
 .fizz {
     background-color: #0cd6a1;
 }
@@ -54,9 +70,11 @@ h1 {
 
 
 
+
 /* ***********
     DEBUG
 *********** */
+
 /* .result {
     border: solid 1px blueviolet;
 } */

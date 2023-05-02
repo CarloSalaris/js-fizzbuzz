@@ -1,6 +1,7 @@
 
-
-// CONSEGNA
+/***************************
+    CONSEGNA
+****************************/
 
 //Scrivi un programma che stampi in console i numeri da 1 a 100
     //Per i multipli di 3 stampa “Fizz” al posto del numero
@@ -10,9 +11,10 @@
 
         // "N Multiplo di x:" = N % x === 0
 
+/* ************************************************** */       
+
 //Selezione elemento genitore
 const container = document.getElementById("container");
-// console.log(container);
 
 // Scrivere tutti i numeri compresi tra 1 e 100 (FOR LOOP) 
 for (let i = 1; i <= 100; i++) {
@@ -20,7 +22,6 @@ for (let i = 1; i <= 100; i++) {
     //creare elemento in HTML con ".append"
     const outputResult = document.createElement('div');
     outputResult.classList.add("result")
-    // console.log(outputResult);
     
     let x = i; 
 
