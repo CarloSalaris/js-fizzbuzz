@@ -12,32 +12,36 @@
 
 //Selezione elemento genitore
 const container = document.getElementById("container");
-console.log(container);
+// console.log(container);
 
 // Scrivere tutti i numeri compresi tra 1 e 100 (FOR LOOP) 
 for (let i = 1; i <= 100; i++) {
 
-    let x = i;
+    //creare elemento in HTML con ".append"
+    const outputResult = document.createElement('div');
+    outputResult.classList.add("result")
+    // console.log(outputResult);
+    
+    let x = i; 
 
     //Condizioni per cui esca una stringa piuttosto che un numero    
     if (i % 15 === 0) { //CONTEMPORANEAMENTE multiplo 3 e 5 -->“FizzBuzz”
         x = "FizzBuzz";
+        outputResult.classList.add("fizz_buzz")
         console.log("FizzBuzz");
     } else if (i % 3 === 0) { //multiplo di 3 --> “Fizz”
         x = "Fizz";
+        outputResult.classList.add("fizz")
         console.log("Fizz");            
     } else if (i % 5 === 0) { //multiplo di 5 --> “Buzz”
         x = "Buzz";
+        outputResult.classList.add("buzz")
         console.log("Buzz");
     } else { //stampa il NUMERO
         console.log(i);
     }
 
-//creare elemento in HTML con ".append"
-const outputResult = document.createElement('div');
-outputResult.classList.add("result")
-console.log(outputResult);
-outputResult.append(x)
-container.append(outputResult);
+    outputResult.append(x)
+    container.append(outputResult);
 
 }

@@ -10,10 +10,12 @@ body {
 
 #wrapper {
     padding: 50px;
+    background-color: #083b4c;
 }
 
 h1 {
     margin-bottom: 30px;
+    color:antiquewhite;
 }
 
 #container {
@@ -26,13 +28,28 @@ h1 {
 }
 
 .result {
-    width: calc(10% - 10px);
+    width: calc(10% - 14px);
+    min-width: 80px;
     aspect-ratio: 1 / 1;
     padding: 5px;
-    margin: 5px;
+    margin: 7px;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 20%;
+    background-color: #1389b2;
+}
+
+.fizz {
+    background-color: #0cd6a1;
+}
+
+.buzz {
+    background-color: #ffd166;
+}
+
+.fizz_buzz {
+    background-color: #f0466f;
 }
 
 
@@ -40,6 +57,6 @@ h1 {
 /* ***********
     DEBUG
 *********** */
-.result {
+/* .result {
     border: solid 1px blueviolet;
-}
+} */
